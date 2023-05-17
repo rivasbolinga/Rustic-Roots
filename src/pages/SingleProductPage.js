@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { single_product_url as url } from '../utils/constants'
@@ -15,7 +15,32 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const SingleProductPage = () => {
-  return <h4>single product page</h4>
+  const {id} = useParams();
+  const history = useHistory();
+  const {single_product_loading: loading, single_product: product, single_product_error: error, fetchSingleProduct} = useProductsContext();
+
+  useEffect(()=> {
+    fetchSingleProduct(`${url}${id}`)
+  }, [id])
+
+useEffect(()=> {
+  if(error) {
+    setTimeout(()=> {
+      history.push('/')
+    }, 3000)
+  }
+})
+
+  if(loading) {
+    return <Loading />
+  } if (error) {
+    return <Error />
+  }
+  return (
+    <Wrapper>
+      <h1>singleProduct</h1>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.main`

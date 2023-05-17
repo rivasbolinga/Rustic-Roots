@@ -63,12 +63,14 @@ useEffect(()=> {
   fetchProducts(url)
 }, [])
 
+
   return (
     <ProductsContext.Provider value={{
       ...state, 
     openSidebar, 
     closeSidebar, 
-    fetchProducts
+    fetchProducts,
+    fetchSingleProduct
     }}>
       {children}
     </ProductsContext.Provider>
