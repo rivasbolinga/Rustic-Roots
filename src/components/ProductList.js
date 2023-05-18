@@ -9,6 +9,8 @@ const ProductList = () => {
   return (
     <GridView products={products}>
     </GridView>
+    <ListView products={products}>
+    </ListView>
   )
 }
 
