@@ -26,7 +26,7 @@ const Filters = () => {
       <div className='form-control'>
         <input 
         type="text"
-         name="" 
+         name="text" 
          placeholder="search" 
          clearFilters="search-input"
          value={text}
