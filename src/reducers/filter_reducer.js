@@ -22,6 +22,24 @@ const filter_reducer = (state, action) => {
     return {...state, grid_view: true}
   } if (action.type === UPDATE_SORT) {
     return {...state, sort: action.payload}
+  } if (action.type === SORT_PRODUCTS) {
+    const {sort, filtered_products} = state;
+    let tempProducts = [...filtered_products]
+    if(sort === 'price-lowest') {
+      tempProducts = filtered_products.sort();
+    }
+    if (sort === 'name-a') {
+      tempProducts = filtered_products.sort();
+      return {...state, filtered_products: tempProducts}
+    }
+    if (sort === 'name-z') {
+       tempProducts = filtered_products.sort().reverse();
+       return { ...state, filtered_products: tempProducts }
+    }
+    if (sort === 'price-highest') {
+      console.log('price-highest')
+    }
+    return {...state, filtered_products: tempProducts}
   }
   return state
   throw new Error(`No Matching "${action.type}" - action type`)
