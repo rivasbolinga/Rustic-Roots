@@ -18,6 +18,7 @@ const initialState = {
   grid_view: true,
 }
 
+
 const FilterContext = React.createContext()
 
 export const FilterProvider = ({ children }) => {
@@ -27,9 +28,15 @@ export const FilterProvider = ({ children }) => {
   useEffect(()=>{
     dispatch({type:LOAD_PRODUCTS, payload: products})
   }, [products])
+  const setGrid = () => {
+    dispatch({ type: SET_GRIDVIEW })
+  }
 
+  const setList = () => {
+    dispatch({ type: SET_LISTVIEW })
+  }
   return (
-    <FilterContext.Provider value={{...state}}>
+    <FilterContext.Provider value={{...state, setGrid, setList}}>
       {children}
     </FilterContext.Provider>
   )
