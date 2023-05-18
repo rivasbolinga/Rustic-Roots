@@ -16,7 +16,17 @@ const initialState = {
   filtered_products: [],
   all_products: [],
   grid_view: true,
-  sort:'name-a'
+  sort:'name-a',
+  filters: {
+    text: '',
+    company: 'all',
+    category: 'all',
+    color: 'all',
+    min_price: 0,
+    max_price: 0,
+    price: 0,
+    shipping: false
+  }
 }
 
 
