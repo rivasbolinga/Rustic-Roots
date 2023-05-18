@@ -16,6 +16,7 @@ const initialState = {
   filtered_products: [],
   all_products: [],
   grid_view: true,
+  sort:'name-a'
 }
 
 
@@ -35,8 +36,14 @@ export const FilterProvider = ({ children }) => {
   const setList = () => {
     dispatch({ type: SET_LISTVIEW })
   }
+
+  const updateSort = (e) => {
+    const value = e.target.value
+    dispatch({type: UPDATE_SORT, payload: value})
+  }
+
   return (
-    <FilterContext.Provider value={{...state, setGrid, setList}}>
+    <FilterContext.Provider value={{...state, setGrid, setList, updateSort}}>
       {children}
     </FilterContext.Provider>
   )
