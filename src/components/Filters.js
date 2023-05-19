@@ -21,8 +21,9 @@ const Filters = () => {
   all_products
  } = useFilterContext();
  const categories = getUniqueValues(all_products, 'category');
-  const companies = getUniqueValues(all_products, 'company')
-   const colors = getUniqueValues(all_products, 'colors')
+  const companies = getUniqueValues(all_products, 'company');
+   const colors = getUniqueValues(all_products, 'colors');
+   console.log(colors)
   return (
     <Wrapper>
       <form onSubmit={(e)=> e.preventDefault()}>
@@ -60,6 +61,34 @@ const Filters = () => {
           value={c}
           >{c}</option>
         })}</select>
+      </div>
+      <div className="form-control">
+        <h5>colors</h5>
+        <div className='colors'>
+          {colors.map((col, index)=> {
+            if(color === 'all') {
+            return <button 
+            key={index} 
+            name="color"
+            onClick={updateFilters} 
+            data-color="all" 
+            className={`${
+            col === 'all' ? 'all-btn active' : 'all-btn'
+          }`}>
+              {col}
+            </button>
+            } return (<button key={index}
+                    name='color'
+                    style={{ background: col }}
+                    className={`${
+                      color === col ? 'color-btn active' : 'color-btn'
+                    }`}
+                    data-color={col}
+                    onClick={updateFilters}></button>)
+            }
+          )}
+          
+        </div>
       </div>
       </form>
     </Wrapper>
