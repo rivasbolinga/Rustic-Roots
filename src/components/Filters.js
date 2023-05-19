@@ -23,7 +23,6 @@ const Filters = () => {
  const categories = getUniqueValues(all_products, 'category');
   const companies = getUniqueValues(all_products, 'company');
    const colors = getUniqueValues(all_products, 'colors');
-   console.log(colors)
   return (
     <Wrapper>
       <form onSubmit={(e)=> e.preventDefault()}>
@@ -84,7 +83,9 @@ const Filters = () => {
                       color === col ? 'color-btn active' : 'color-btn'
                     }`}
                     data-color={col}
-                    onClick={updateFilters}></button>)
+                    onClick={updateFilters}>
+                      {color === col? <FaCheck /> : null}
+                    </button>)
             }
           )}
           
