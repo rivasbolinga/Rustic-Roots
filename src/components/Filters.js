@@ -39,7 +39,15 @@ const Filters = () => {
         <h5>category</h5>
         <div>
           {categories.map((c, index)=> {
-          return <button key={index}>{c}</button>
+          return <button 
+          key={index}
+          type='button'
+          name='category'
+          onClick={updateFilters}
+          className={`${
+            category === c.toLowerCase() ? 'active' : null
+          }`}
+          >{c}</button>
           }
           )}
         </div>
