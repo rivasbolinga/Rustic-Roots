@@ -31,9 +31,18 @@ const Filters = () => {
         type="text"
          name="text" 
          placeholder="search" 
-         clearFilters="search-input"
+         className="search-input"
          value={text}
          onChange={updateFilters} />
+      </div>
+      <div className="form-control">
+        <h5>category</h5>
+        <div>
+          {categories.map((c, index)=> {
+          return <button key={index}>{c}</button>
+          }
+          )}
+        </div>
       </div>
       </form>
     </Wrapper>
