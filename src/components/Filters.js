@@ -23,7 +23,7 @@ const Filters = () => {
  const categories = getUniqueValues(all_products, 'category');
   const companies = getUniqueValues(all_products, 'company');
    const colors = getUniqueValues(all_products, 'colors');
-   const pri22 = getUniqueValues(all_products, 'price');
+   console.log(shipping)
   return (
     <Wrapper>
       <form onSubmit={(e) => e.preventDefault()}>
@@ -121,6 +121,17 @@ const Filters = () => {
             min={min_price}
             max={max_price}
             value={price}
+          />
+        </div>
+        <div className="form-control shipping">
+          <h5>shipping</h5>
+          <label htmlFor='shipping'>free shipping</label>
+          <input
+            type="checkbox"
+            name="shipping"
+            id="shipping"
+            onChange={updateFilters}
+            checked={shipping}
           />
         </div>
       </form>
