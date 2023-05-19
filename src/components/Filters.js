@@ -20,6 +20,9 @@ const Filters = () => {
   clearFilters,
   all_products
  } = useFilterContext();
+ const categories = getUniqueValues(all_products, 'category');
+  const companies = getUniqueValues(all_products, 'company')
+   const colors = getUniqueValues(all_products, 'colors')
   return (
     <Wrapper>
       <form onSubmit={(e)=> e.preventDefault()}>
