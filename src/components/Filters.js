@@ -65,7 +65,7 @@ const Filters = () => {
         <h5>colors</h5>
         <div className='colors'>
           {colors.map((col, index)=> {
-            if(color === 'all') {
+            if(col === 'all') {
             return <button 
             key={index} 
             name="color"
@@ -84,7 +84,7 @@ const Filters = () => {
                     }`}
                     data-color={col}
                     onClick={updateFilters}>
-                      {color === col? <FaCheck /> : null}
+                      {color === col ? <FaCheck /> : null}
                     </button>)
             }
           )}
