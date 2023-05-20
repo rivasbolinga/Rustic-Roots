@@ -19,10 +19,14 @@ const { openSidebar } = useProductsContext();
           {links.map((link) => {
             const { id, text, url } = link
             return (
-              <li key={id}>
-                <Link to={url}>{text}</Link>
-              </li>
-            
+              <>
+                <li key={id}>
+                  <Link to={url}>{text}</Link>
+                </li>
+                <li>
+                  <span className='bullet-point'>&#x2022;</span>{' '}
+                </li>
+              </>
             )
           })}
         </ul>
@@ -77,6 +81,7 @@ const NavContainer = styled.nav`
     display: none;
   }
   @media (min-width: 992px) {
+    padding: 0 40px;
     border-bottom: 0.5px solid grey;
     .nav-toggle {
       display: none;
@@ -89,8 +94,13 @@ const NavContainer = styled.nav`
     .nav-links {
       display: flex;
       justify-content: center;
+      align-items: center;
       li {
         margin: 0 0.5rem;
+      }
+      .bullet-point {
+        font-size: 25px;
+        color: grey;
       }
       a {
         color: var(--clr-grey-3);

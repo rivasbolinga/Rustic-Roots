@@ -14,14 +14,12 @@ const CartButtons = () => {
   return (
     <Wrapper className="cart-btn-wrapper">
       <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
-        Cart
         <span className="cart-container">
           <BsCart />
           <span className="cart-value">12</span>
         </span>
       </Link>
       <button type="button" className="auth-btn">
-        Login
         <AiOutlineUser />
       </button>
     </Wrapper>
@@ -32,7 +30,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  width: 225px;
+  gap: 20px;
 
   .cart-btn {
     color: var(--clr-grey-1);
