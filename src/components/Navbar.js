@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -14,18 +14,18 @@ const { openSidebar } = useProductsContext();
 
   return (
     <NavContainer>
-      <div className='nav-center'>
-        <div className='nav-header'>
+      <div className="nav-center">
+        <div className="nav-header">
           <Link to="/">
-             <img src={logo} alr='comfy sloth'/>
-             <button type="button" className='nav-toggle' onClick={openSidebar}>
-              <FaBars />
-             </button>
+            <img src={logo} alt="comfy sloth" />
           </Link>
+          <button type="button" className="nav-toggle" onClick={openSidebar}>
+            <FaBars />
+          </button>
         </div>
-        <ul className='nav-links'>
-          {links.map((link)=> {
-            const { id, text, url} = link;
+        <ul className="nav-links">
+          {links.map((link) => {
+            const { id, text, url } = link
             return (
               <li key={id}>
                 <Link to={url}>{text}</Link>
@@ -40,7 +40,6 @@ const { openSidebar } = useProductsContext();
 }
 
 const NavContainer = styled.nav`
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,15 +54,16 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 175px;
+      width: 140px;
       margin-left: -15px;
     }
   }
   .nav-toggle {
     background: transparent;
-    border: transparent;
-    color: var(--clr-primary-5);
+    border: transparent;;
     cursor: pointer;
+    align-self: start;
+    margin-top: 20px;
     svg {
       font-size: 2rem;
     }
