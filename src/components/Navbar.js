@@ -15,6 +15,17 @@ const { openSidebar } = useProductsContext();
   return (
     <NavContainer>
       <div className="nav-center">
+        <ul className="nav-links">
+          {links.map((link) => {
+            const { id, text, url } = link
+            return (
+              <li key={id}>
+                <Link to={url}>{text}</Link>
+              </li>
+            
+            )
+          })}
+        </ul>
         <div className="nav-header">
           <Link to="/">
             <img src={logo} alt="comfy sloth" />
@@ -23,16 +34,7 @@ const { openSidebar } = useProductsContext();
             <FaBars />
           </button>
         </div>
-        <ul className="nav-links">
-          {links.map((link) => {
-            const { id, text, url } = link
-            return (
-              <li key={id}>
-                <Link to={url}>{text}</Link>
-              </li>
-            )
-          })}
-        </ul>
+
         <CartButtons />
       </div>
     </NavContainer>
@@ -43,11 +45,11 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 
   .nav-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: var(--max-width);
+    margin: 0;
+    width: 100%;
   }
   .nav-header {
     display: flex;
@@ -60,7 +62,7 @@ const NavContainer = styled.nav`
   }
   .nav-toggle {
     background: transparent;
-    border: transparent;;
+    border: transparent;
     cursor: pointer;
     align-self: start;
     margin-top: 20px;
@@ -75,12 +77,13 @@ const NavContainer = styled.nav`
     display: none;
   }
   @media (min-width: 992px) {
+    border-bottom: 0.5px solid grey;
     .nav-toggle {
       display: none;
     }
     .nav-center {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
     }
     .nav-links {
@@ -91,7 +94,7 @@ const NavContainer = styled.nav`
       }
       a {
         color: var(--clr-grey-3);
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
