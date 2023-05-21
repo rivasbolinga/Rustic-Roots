@@ -49,6 +49,11 @@ Variables
 Global Styles
 ===============
 */
+.section-center.home {
+  background-image: url('./assets/bc1.png');
+  background-size: cover;
+  border-radius: 150px;
+}
 
 *,
 ::after,

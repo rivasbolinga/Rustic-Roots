@@ -6,7 +6,7 @@ import heroBcg2 from '../assets/hero-bcg-2.jpeg'
 
 const Hero = () => {
   return (
-    <Wrapper className="section-center">
+    <Wrapper className="section-center home">
       <article className="content">
         <h1>
           design your <br />
@@ -22,15 +22,13 @@ const Hero = () => {
           shop now
         </Link>
       </article>
-      <article className="img-container">
-        <img src={heroBcg} alt="nice table" className="main-img"></img>
-        <img src={heroBcg2} alt="person working" className="accent-img"></img>
-      </article>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
+
+  background-image: url('../assets/bc1.png');
   min-height: 60vh;
   display: grid;
   place-items: center;
@@ -47,7 +45,6 @@ const Wrapper = styled.section`
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
-    grid-template-columns: 1fr 1fr;
     gap: 8rem;
     h1 {
       margin-bottom: 2rem;
