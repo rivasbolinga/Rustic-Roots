@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -14,25 +14,31 @@ const { openSidebar } = useProductsContext();
 
   return (
     <NavContainer>
-      <div className='nav-center'>
-        <div className='nav-header'>
-          <Link to="/">
-             <img src={logo} alr='comfy sloth'/>
-             <button type="button" className='nav-toggle' onClick={openSidebar}>
-              <FaBars />
-             </button>
-          </Link>
-        </div>
-        <ul className='nav-links'>
-          {links.map((link)=> {
-            const { id, text, url} = link;
+      <div className="nav-center">
+        <ul className="nav-links">
+          {links.map((link) => {
+            const { id, text, url } = link
             return (
-              <li key={id}>
-                <Link to={url}>{text}</Link>
-              </li>
+              <>
+                <li key={id}>
+                  <Link to={url}>{text}</Link>
+                </li>
+                <li>
+                  <span className='bullet-point'>&#x2022;</span>{' '}
+                </li>
+              </>
             )
           })}
         </ul>
+        <div className="nav-header">
+          <Link className='nav-logo' to="/">
+            <img src={logo} alt="comfy sloth" />
+          </Link>
+          <button type="button" className="nav-toggle" onClick={openSidebar}>
+            <FaBars />
+          </button>
+        </div>
+
         <CartButtons />
       </div>
     </NavContainer>
@@ -40,30 +46,30 @@ const { openSidebar } = useProductsContext();
 }
 
 const NavContainer = styled.nav`
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 
   .nav-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: var(--max-width);
+    margin: 0;
+    width: 100%;
   }
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     img {
-      width: 175px;
+      width: 140px;
       margin-left: -15px;
     }
   }
   .nav-toggle {
     background: transparent;
     border: transparent;
-    color: var(--clr-primary-5);
     cursor: pointer;
+    align-self: start;
+    margin-top: 20px;
     svg {
       font-size: 2rem;
     }
@@ -75,23 +81,36 @@ const NavContainer = styled.nav`
     display: none;
   }
   @media (min-width: 992px) {
+    padding: 0 40px;
+    border-bottom: 0.5px solid grey;
+    height: 150px;
     .nav-toggle {
       display: none;
     }
+    .nav-logo {
+      position: absolute;
+      top: 0;
+      left: 46%;
+    }
     .nav-center {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
     }
     .nav-links {
       display: flex;
       justify-content: center;
+      align-items: center;
       li {
         margin: 0 0.5rem;
       }
+      .bullet-point {
+        font-size: 25px;
+        color: grey;
+      }
       a {
         color: var(--clr-grey-3);
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;

@@ -6,55 +6,86 @@ import heroBcg2 from '../assets/hero-bcg-2.jpeg'
 
 const Hero = () => {
   return (
-    <Wrapper className="section-center">
+    <Wrapper className="section-center home">
       <article className="content">
         <h1>
           design your <br />
           comfort zone
         </h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-          provident, repellendus illo mollitia obcaecati quis totam consequatur,
-          non iste sint, molestias cum natus necessitatibus nesciunt! Inventore
-          corporis sed voluptas saepe!
+          Discover a world of exquisite furniture pieces designed to enhance
+          your living spaces and create an ambiance of comfort and elegance.
         </p>
-        <Link to="/products" className="">
-          shop now
+        <Link to="/products" className="shop-now-button">
+          Shop Now
         </Link>
-      </article>
-      <article className="img-container">
-        <img src={heroBcg} alt="nice table" className="main-img"></img>
-        <img src={heroBcg2} alt="person working" className="accent-img"></img>
       </article>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  min-height: 60vh;
-  display: grid;
-  place-items: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .img-container {
     display: none;
   }
-
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 220px;
+    height: 85%;
+  }
   p {
+    display: none;
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
-    font-size: 1rem;
+    color: var(--clr-grey-8: );
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  a {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 40px;
+    font-size: 18px;
+  }
+  @media (min-width: 768px) {
+    .content {
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    p,
+    h1 {
+      display: block;
+      font-family: 'Playfair';
+      line-height: 25px;
+      letter-spacing: 2px;
+    }
+    h1 {
+      line-height: 50px;
+      letter-spacing: 5px;
+      font-size: 45px;
+      text-align: center;
+      font-weight: 300;
+    }
+    a {
+      margin-top: 170px;
+      font-size: 22px;
+    }
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
-    grid-template-columns: 1fr 1fr;
     gap: 8rem;
-    h1 {
-      margin-bottom: 2rem;
-    }
-    p {
-      font-size: 1.25rem;
-    }
+
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
@@ -71,23 +102,29 @@ const Wrapper = styled.section`
       display: block;
       object-fit: cover;
     }
-    .accent-img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 250px;
-      transform: translateX(-50%);
-      border-radius: var(--radius);
+    .content {
+      justify-content: start;
+      height: 100%;
+      margin-top: 200px;
+      gap: 30px;
     }
-    .img-container::before {
-      content: '';
-      position: absolute;
-      width: 10%;
-      height: 80%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
+    p {
+      width: 60%;
+      margin: 0;
+    }
+    a {
+      margin-top: 0;
+      font-size: 22px;
+      color: var(--clr-primary-5);
+      border: 1px solid var(--clr-primary-5);
+    }
+    a: hover {
+      background-color: var(--clr-primary-5);
+      color: white;
+      border: 1px solid white;
+    }
+    h1 {
+      font-size: 50px;
     }
   }
 `
