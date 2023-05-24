@@ -1,27 +1,8 @@
-## Notes
-<div align="center">
-  <img
-          alt="Caroline Aime logo"
-          src="https://user-images.githubusercontent.com/103900838/232329006-da6685dd-e72a-4eb9-a15a-457d2d2b555d.png"
-          width="140"  height="auto" 
-        />
-         <img
-          alt="Andrea Rivas logo"
-          src="https://user-images.githubusercontent.com/103900838/232334733-a5a82cb8-0af9-460a-b2dd-d9e5767d1d6c.png"
-          width="140"  height="auto" 
-        />
-         <img
-          alt="Adarsh logo"
-          src="https://user-images.githubusercontent.com/103900838/232334939-059645e2-75cf-4ab4-884a-6510f2211f81.png"
-          width="140"  height="auto" 
-        />
 
 
 
+#  💆🏼‍♀️ Rustic Roots  <a name="about-project"></a>
 
-#  💆🏼‍♀️ Caroline Aimé Healing  <a name="about-project"></a>
-  ![all-devices-black (4)](https://user-images.githubusercontent.com/103900838/232330635-ecb30b82-94b8-40dd-8b4e-20adc6ba5913.png)
- <a name="about-project"></a>
 
 </div>
 
