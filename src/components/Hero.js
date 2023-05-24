@@ -106,6 +106,7 @@ const Wrapper = styled.section`
       justify-content: start;
       height: 100%;
       margin-top: 200px;
+      gap: 30px;
     }
     p {
       width: 60%;

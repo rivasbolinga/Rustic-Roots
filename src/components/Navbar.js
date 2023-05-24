@@ -31,7 +31,7 @@ const { openSidebar } = useProductsContext();
           })}
         </ul>
         <div className="nav-header">
-          <Link to="/">
+          <Link className='nav-logo' to="/">
             <img src={logo} alt="comfy sloth" />
           </Link>
           <button type="button" className="nav-toggle" onClick={openSidebar}>
@@ -83,8 +83,14 @@ const NavContainer = styled.nav`
   @media (min-width: 992px) {
     padding: 0 40px;
     border-bottom: 0.5px solid grey;
+    height: 150px;
     .nav-toggle {
       display: none;
+    }
+    .nav-logo {
+      position: absolute;
+      top: 0;
+      left: 46%;
     }
     .nav-center {
       display: flex;

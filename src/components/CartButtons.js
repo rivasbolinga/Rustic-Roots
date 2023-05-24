@@ -32,14 +32,16 @@ const Wrapper = styled.div`
   align-items: center;
   gap: 20px;
 
+
   .cart-btn {
     color: var(--clr-grey-1);
     font-size: 1.5rem;
     letter-spacing: var(--spacing);
     color: var(--clr-grey-1);
     display: flex;
-
+    width: 40px;
     align-items: center;
+    padding: 50%;
   }
   .cart-container {
     display: flex;
