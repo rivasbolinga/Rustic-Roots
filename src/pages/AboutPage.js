@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { PageHero } from '../components'
 import aboutImg from '../assets/hero-bcg.png'
+import aboutImg2 from '../assets/hero-bcg2.png'
 
 const AboutPage = () => {
   return (
@@ -27,7 +28,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='second-div'>
-          <img src={aboutImg} alt="nice desk" />
+          <img className='second-image' src={aboutImg2} alt="nice desk" />
           <p>
                 Expanding its range over the years, Rustic Root sourced from
                 local artisans, preserving craftsmanship traditions. By its 10th
@@ -56,7 +57,7 @@ const AboutPage = () => {
 
 const Wrapper = styled.section`
   display: grid;
-  gap: 4rem;
+  gap: 6rem;
   img {
     width: 100%;
     display: block;
@@ -73,17 +74,29 @@ const Wrapper = styled.section`
     font-family: 'Playfair';
   }
   h2 {
+    margin-top: 40px;
     font-size: 40px;
     text-align: center;
   }
   .title {
     text-align: left;
   }
-  .underline {
-    margin-left: 0;
-  }
+
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    .second-div {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .second-image {
+      margin-top: 40px;
+    }
+
+    .first-div {
+      p {
+        text-align: right;
+      }
+    }
   }
 `
 export default AboutPage
