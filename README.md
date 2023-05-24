@@ -32,9 +32,7 @@ Rustic Roots is the perfect online furniture store where style meets functionali
 
  ## 📖 PROJECT DESCRIPTION <a name="project-description"></a>
  
-Caroline Aime Healing is a website created as part of a freelance project with the objective of providing clients with a user-friendly platform for professional massage services that promote relaxation and rejuvenation.</br> As a team, we gained valuable experience in designing and developing a massage website, utilizing our expertise in web design and development, search engine optimization, and communication to create an exceptional online experience for clients. </br>
-Through our attention to detail and passion for creating a visually appealing and easy-to-navigate website, we have successfully created a platform that provides clients with detailed information about our massage services, pricing, and availability. Our online booking system enables clients to schedule and manage appointments with ease, while our customer review section allows for valuable feedback and continual improvement. </br>
-  In summary, Caroline Aime Healing is the ideal website for clients seeking a professional and relaxing massage experience. With our expertise in web design and development, search engine optimization, and communication, we have created a platform that is both visually appealing and user-friendly, providing clients with a rejuvenating and stress-free experience.
+
   
 ## 🛠 Built With <a name="built-with"></a>
 
