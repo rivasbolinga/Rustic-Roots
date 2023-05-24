@@ -13,10 +13,8 @@ const Hero = () => {
           comfort zone
         </h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-          provident, repellendus illo mollitia obcaecati quis totam consequatur,
-          non iste sint, molestias cum natus necessitatibus nesciunt! Inventore
-          corporis sed voluptas saepe!
+          Discover a world of exquisite furniture pieces designed to enhance
+          your living spaces and create an ambiance of comfort and elegance.
         </p>
         <Link to="/products" className="shop-now-button">
           Shop Now
@@ -39,17 +37,17 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    gap: 280px;
-    height: 90%;
-    
+    gap: 220px;
+    height: 85%;
   }
   p {
     display: none;
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
-    font-size: 1rem;
+    color: var(--clr-grey-8: );
+    font-size: 1.1rem;
+    text-align: center;
   }
   a {
     color: white;
@@ -57,6 +55,33 @@ const Wrapper = styled.section`
     padding: 5px 20px;
     border-radius: 40px;
     font-size: 18px;
+  }
+  @media (min-width: 768px) {
+    .content {
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    p,
+    h1 {
+      display: block;
+      font-family: 'Playfair';
+      line-height: 25px;
+      letter-spacing: 2px;
+    }
+    h1 {
+      line-height: 45px;
+      letter-spacing: 5px;
+      font-size: 45px;
+      text-align: center;
+      font-weight: 300;
+    }
+    a {
+      margin-top: 170px;
+      font-size: 22px;
+
+    }
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);

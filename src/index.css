@@ -53,10 +53,18 @@ Global Styles
   background-image: url('./assets/bc1.png');
   background-size: cover;
   padding: 0;
-  background-size: cover;
   background-repeat: no-repeat;
   background-position:  -400px 0;
 }
+
+  @media (min-width: 768px) {
+    .section-center.home {
+  background-image: url('./assets/bc1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  -220px 0;
+}
+  }
 
 *,
 ::after,
