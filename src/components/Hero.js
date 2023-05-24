@@ -18,8 +18,8 @@ const Hero = () => {
           non iste sint, molestias cum natus necessitatibus nesciunt! Inventore
           corporis sed voluptas saepe!
         </p>
-        <Link to="/products" className="">
-          shop now
+        <Link to="/products" className="shop-now-button">
+          Shop Now
         </Link>
       </article>
     </Wrapper>
@@ -27,14 +27,22 @@ const Hero = () => {
 }
 
 const Wrapper = styled.section`
-   height: 600px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .img-container {
     display: none;
   }
-
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 280px;
+    height: 90%;
+    
+  }
   p {
     display: none;
     line-height: 2;
@@ -42,6 +50,13 @@ const Wrapper = styled.section`
     margin-bottom: 2rem;
     color: var(--clr-grey-5);
     font-size: 1rem;
+  }
+  a {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 40px;
+    font-size: 18px;
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
