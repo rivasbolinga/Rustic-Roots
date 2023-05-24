@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa'
+import { BsCart } from 'react-icons/bs'
+import {AiOutlineUser} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useProductsContext } from '../context/products_context'
@@ -10,28 +11,27 @@ const CartButtons = () => {
 
   const {closeSidebar} = useProductsContext();
   
-  return <Wrapper className='cart-btn-wrapper'>
-    <Link to="/cart" className='cart-btn' onClick={closeSidebar}>
-      Cart
-      <span className="cart-container">
-        <FaShoppingCart />
-        <span className='cart-value'>
-          12
+  return (
+    <Wrapper className="cart-btn-wrapper">
+      <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
+        <span className="cart-container">
+          <BsCart />
+          <span className="cart-value">12</span>
         </span>
-      </span>
-    </Link>
-    <button type="button" className='auth-btn'>
-      Login 
-      <FaUserPlus />
-    </button>
-  </Wrapper>
+      </Link>
+      <button type="button" className="auth-btn">
+        <AiOutlineUser />
+      </button>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  width: 225px;
+  gap: 20px;
+
 
   .cart-btn {
     color: var(--clr-grey-1);
@@ -39,8 +39,9 @@ const Wrapper = styled.div`
     letter-spacing: var(--spacing);
     color: var(--clr-grey-1);
     display: flex;
-
+    width: 40px;
     align-items: center;
+    padding: 50%;
   }
   .cart-container {
     display: flex;
