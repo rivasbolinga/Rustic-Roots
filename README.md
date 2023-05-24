@@ -44,8 +44,6 @@ Through our attention to detail and passion for creating a visually appealing an
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
 <img align="center" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="react" width="60" height="60"/></a>
-<a href="https://redux-toolkit.js.org/" target="_blank" rel="noreferrer">
-<img align="center" src="https://user-images.githubusercontent.com/103900838/222968100-66b1cdba-dcbe-4047-a88f-3f55ccf983ee.svg" alt="redux" width="60" height="60"/></a>
 <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
 <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="sass" width="60" height="60"/></a>
 
@@ -57,9 +55,7 @@ Through our attention to detail and passion for creating a visually appealing an
 <!-- > Describe between 1-3 key features of the application.-->
 
 - [ ] **Totally responsive: tablet, phone and desktop**
-- [ ] **Navigation Routes: Home, About me, Contact, Massages and Shoprology**
-- [ ] **Switch language option: English and French**
-- [ ] **Book a massage option**
+- [ ] **Navigation Routes: Home, About me, Products Page, Single Product Page, Cart and Profile**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
