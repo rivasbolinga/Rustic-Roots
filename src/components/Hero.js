@@ -52,7 +52,7 @@ const Wrapper = styled.section`
   a {
     color: white;
     border: 1px solid white;
-    padding: 5px 20px;
+    padding: 5px 15px;
     border-radius: 40px;
     font-size: 18px;
   }
@@ -71,7 +71,7 @@ const Wrapper = styled.section`
       letter-spacing: 2px;
     }
     h1 {
-      line-height: 45px;
+      line-height: 50px;
       letter-spacing: 5px;
       font-size: 45px;
       text-align: center;
@@ -80,18 +80,12 @@ const Wrapper = styled.section`
     a {
       margin-top: 170px;
       font-size: 22px;
-
     }
   }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     gap: 8rem;
-    h1 {
-      margin-bottom: 2rem;
-    }
-    p {
-      font-size: 1.25rem;
-    }
+
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
@@ -108,23 +102,28 @@ const Wrapper = styled.section`
       display: block;
       object-fit: cover;
     }
-    .accent-img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 250px;
-      transform: translateX(-50%);
-      border-radius: var(--radius);
+    .content {
+      justify-content: start;
+      height: 100%;
+      margin-top: 200px;
     }
-    .img-container::before {
-      content: '';
-      position: absolute;
-      width: 10%;
-      height: 80%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
+    p {
+      width: 60%;
+      margin: 0;
+    }
+    a {
+      margin-top: 0;
+      font-size: 22px;
+      color: var(--clr-primary-5);
+      border: 1px solid var(--clr-primary-5);
+    }
+    a: hover {
+      background-color: var(--clr-primary-5);
+      color: white;
+      border: 1px solid white;
+    }
+    h1 {
+      font-size: 50px;
     }
   }
 `
