@@ -1,8 +1,8 @@
 
 
 
-#  💆🏼‍♀️ Rustic Roots  <a name="about-project"></a>
-
+#  🪑 Rustic Roots  <a name="about-project"></a>
+Rustic Roots is the perfect online furniture store where style meets functionality and your dream home becomes a reality. Discover a world of exquisite furniture pieces designed to enhance your living spaces and create an ambiance of comfort and elegance. Whether you're furnishing a cozy apartment, a spacious house, or an office, we have the perfect furniture solutions to suit your taste and needs. Explore our diverse collection and let your imagination soar.
 
 </div>
 
