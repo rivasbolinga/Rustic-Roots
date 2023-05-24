@@ -52,7 +52,10 @@ Global Styles
 .section-center.home {
   background-image: url('./assets/bc1.png');
   background-size: cover;
-  border-radius: 150px;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  -200px 0;
 }
 
 *,

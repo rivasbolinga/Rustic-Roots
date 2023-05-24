@@ -27,16 +27,16 @@ const Hero = () => {
 }
 
 const Wrapper = styled.section`
-
-  background-image: url('../assets/bc1.png');
-  min-height: 60vh;
-  display: grid;
-  place-items: center;
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   .img-container {
     display: none;
   }
 
   p {
+    display: none;
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
