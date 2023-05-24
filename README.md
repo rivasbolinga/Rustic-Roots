@@ -64,8 +64,7 @@ Through our attention to detail and passion for creating a visually appealing an
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live version 📍 [here](https://carolineaime-adarsh-and-andrea.netlify.app/)
-(still under construction)
+You can see the live version 📍 [here](https://rusticroots.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
