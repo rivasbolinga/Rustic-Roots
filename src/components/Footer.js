@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <h5>&copy; {new Date().getFullYear()}</h5>
-      <span> ComfySloth</span>
+      <span>Rustic Roots</span>
       <h5>All rights reserved</h5>
     </Wrapper>
   )
@@ -31,6 +31,7 @@ const Wrapper = styled.footer`
   }
   @media (min-width: 776px) {
     flex-direction: row;
+    gap: 5px;
   }
 `
 
