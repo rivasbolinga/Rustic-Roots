@@ -11,19 +11,12 @@ const Services = () => {
             custom furniture <br />
             built only for you
           </h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            eos. Facilis aspernatur tempora placeat sint consequuntur commodi
-            similique officia sed dignissimos? Obcaecati culpa voluptatum
-            provident quod cupiditate corporis quis. Rerum.
-          </p>
         </article>
       </div>
       <div className="services-center">{services.map((service) => {
         const {id, icon, title, text } = service;
         return (
           <article key={id} className="service">
-            <span className='icon'>{icon}</span>
             <h4>{title}</h4>
             <p>{text}</p>
           </article>
@@ -40,7 +33,6 @@ const Wrapper = styled.section`
   }
   padding: 5rem 0;
 
-  background: var(--clr-primary-10);
 
   .header h3 {
     margin-bottom: 2rem;
