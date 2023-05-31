@@ -142,8 +142,8 @@ npm start
 <!-- Features -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Finish desing**
-- [ ] **Gift card sections with optin to pay online**
+- [ ] **Finish design**
+- [ ] **Gift card sections with option to pay online**
 - [ ] **Yoga classes section**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
