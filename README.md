@@ -54,6 +54,8 @@ Rustic Roots is the perfect online furniture store where style meets functionali
 
 - [ ] **Totally responsive: tablet, phone and desktop**
 - [ ] **Navigation Routes: Home, About me, Products Page, Single Product Page, Cart and Profile**
+- [ ] **Checkout products**
+- [ ] **My profile**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,7 +96,7 @@ In order to run this project you need:
 
 
 ```
-git clone git@github.com:rivasbolinga/massage-caroline.git
+git clone https://github.com/rivasbolinga/Rustic-Roots.git
 ```
 
 - [ ] Open the file in your code editor
@@ -126,12 +128,6 @@ npm start
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Adarsh Pathak**
-
-- GitHub: [@PowerLevel9000](https://github.com/PowerLevel9000)
-- LinkedIn: [Adarsh](https://www.linkedin.com/in/powerlevel/)
-
-
 👤 **Andrea Rivas**
 
 - GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
@@ -142,9 +138,9 @@ npm start
 <!-- Features -->
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Finish design**
-- [ ] **Gift card sections with option to pay online**
-- [ ] **Yoga classes section**
+- [ ] **Improve design**
+- [ ] **Add my profile section**
+- [ ] **Add checkout for products**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +150,7 @@ npm start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Issues](https://github.com/rivasbolinga/massage-caroline/issues).
+Feel free to check the [Issues](https://github.com/rivasbolinga/Rustic-roots/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +166,7 @@ If you like this project, please don't forget to follow us and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Caroline to make this possible
+I would like to thank Jonh Smilga for his great tutorial of Udemy teaching how to develop this code. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
