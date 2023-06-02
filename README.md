@@ -2,6 +2,7 @@
 
 
 #  🪑 Rustic Roots  <a name="about-project"></a>
+
 Rustic Roots is the perfect online furniture store where style meets functionality and your dream home becomes a reality. Discover a world of exquisite furniture pieces designed to enhance your living spaces and create an ambiance of comfort and elegance. Whether you're furnishing a cozy apartment, a spacious house, or an office, we have the perfect furniture solutions to suit your taste and needs. Explore our diverse collection and let your imagination soar.
 
 </div>
@@ -32,6 +33,7 @@ Rustic Roots is the perfect online furniture store where style meets functionali
 
  ## 📖 PROJECT DESCRIPTION <a name="project-description"></a>
  
+ Rustic Roots is a online shop of furniture. I have created this website with the goal of enhancing my React skills, inspired by an Udemy course taught by Jonh Smilga. After completing the course, I decided to apply my own design to further enhance my learning experience.
 
   
 ## 🛠 Built With <a name="built-with"></a>
