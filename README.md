@@ -1,4 +1,5 @@
 
+![all-devices-white (1)](https://github.com/rivasbolinga/Rustic-Roots/assets/103900838/740a1355-39be-41a4-913d-ff9719375dfe)
 
 
 #  🪑 Rustic Roots  <a name="about-project"></a>
