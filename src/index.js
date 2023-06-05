@@ -15,8 +15,7 @@ root.render(
   <Auth0Provider
     domain="dev-635ounsp7aik3c5z.us.auth0.com"
     clientId="1E2kD2igwFO8tPQYMpax8yPznwX6vvDW"
-    redirectUri={window.location.origin}
-    cacheLocation='localstorage'
+    authorizationParams={{redirect_uri: window.location.origin,}}
 
   >
     <ProductsProvider>

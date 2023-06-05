@@ -19,14 +19,14 @@ const { openSidebar } = useProductsContext();
           {links.map((link) => {
             const { id, text, url } = link
             return (
-              <>
-                <li key={id}>
+              <React.Fragment key={id}>
+                <li>
                   <Link to={url}>{text}</Link>
                 </li>
                 <li>
-                  <span className='bullet-point'>&#x2022;</span>{' '}
+                  <span className="bullet-point">&#x2022;</span>{' '}
                 </li>
-              </>
+              </React.Fragment>
             )
           })}
         </ul>
