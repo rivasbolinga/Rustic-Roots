@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
 import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/products_context'
-import { useUserContext } from '../context/user_context'
 
 const Nav = () => {
 const { openSidebar } = useProductsContext();
@@ -19,14 +18,14 @@ const { openSidebar } = useProductsContext();
           {links.map((link) => {
             const { id, text, url } = link
             return (
-              <>
-                <li key={id}>
+              <React.Fragment key={id}>
+                <li>
                   <Link to={url}>{text}</Link>
                 </li>
                 <li>
-                  <span className='bullet-point'>&#x2022;</span>{' '}
+                  <span className="bullet-point">&#x2022;</span>{' '}
                 </li>
-              </>
+              </React.Fragment>
             )
           })}
         </ul>
