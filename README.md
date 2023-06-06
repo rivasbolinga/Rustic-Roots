@@ -29,7 +29,7 @@ Rustic Roots is the perfect online furniture store where style meets functionali
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License](#license)
-
+  - 
 <!-- PROJECT DESCRIPTION -->
 
  ## 📖 PROJECT DESCRIPTION <a name="project-description"></a>
@@ -173,11 +173,4 @@ I would like to thank Jonh Smilga for his great tutorial of Udemy teaching how t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
