@@ -44,14 +44,9 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 992px) {
-    .main {
-      height: 500px;
-    }
-    .gallery {
-      img {
-        height: 75px;
-      }
-    }
+
+ 
+    
   }
 `
 
