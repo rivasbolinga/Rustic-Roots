@@ -50,14 +50,14 @@ useEffect(()=> {
   return (
     <Wrapper>
       <PageHero title={name} product />
-      <div className='"section section-center page'>
+      <div className="section section-center page">
         <Link to="/products" className="btn">
           back to products
         </Link>
         <div className="product-center">
-          <ProductImages images={images}/>
+          <ProductImages images={images} />
           <section className="content">
-            <h2>{name}</h2>
+            <h2 className='title'>{name}</h2>
             <Stars stars={stars} reviews={reviews} />
             <h5 className="price">{formatPrice(price)}</h5>
             <p className="desc">{description}</p>
@@ -66,15 +66,15 @@ useEffect(()=> {
               {stock > 0 ? 'In stock' : 'out of stock'}
             </p>
             <p className="info">
-              <span>SKU : </span>
+              <span>SKU :</span>
               {sku}
-            </p>{' '}
+            </p>
             <p className="info">
-              <span>brand : </span>
+              <span>Brand :</span>
               {company}
             </p>
             <hr />
-            {stock > 0 && <AddToCart product={product}/>}
+            {stock > 0 && <AddToCart product={product} />}
           </section>
         </div>
       </div>
@@ -83,9 +83,15 @@ useEffect(()=> {
 }
 
 const Wrapper = styled.main`
+  .title {
+    border-top: 2px solid rgb(69, 50, 39);
+    border-bottom: 2px solid rgb(69, 50, 39);
+    padding: 4px;
+    text-align: center;
+  }
   .product-center {
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 2rem;
   }
   .price {
