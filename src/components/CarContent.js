@@ -16,12 +16,12 @@ const CartItems = () => {
       })}
       <hr />
       <div className="link-container">
-        <Link to="/products" className="link-btn">
+        <Link to="/products" className="link-btn btn">
           continue shopping
         </Link>
         <button
           type="button"
-          className="link-btn clear-btn"
+          className="link-btn clear-btn btn"
           onClick={clearCart}
         >
           clear shopping cart
@@ -37,20 +37,17 @@ const Wrapper = styled.section`
     justify-content: space-between;
     margin-top: 2rem;
   }
-  .link-btn {
-    background: transparent;
-    border-color: transparent;
-    text-transform: capitalize;
-    padding: 0.25rem 0.5rem;
-    background: var(--clr-primary-5);
-    color: var(--clr-white);
-    border-radius: var(--radius);
-    letter-spacing: var(--spacing);
-    font-weight: 400;
-    cursor: pointer;
-  }
+
   .clear-btn {
-    background: var(--clr-black);
+    background: rgb(121, 86, 68);
+    color: white;
+    border: none;
+  }
+
+  .clear-btn:hover {
+    background: none;
+    color: rgb(121, 86, 68);
+    border: 1px solid rgb(121, 86, 68);
   }
 `
 export default CartItems

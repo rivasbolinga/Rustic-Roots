@@ -55,9 +55,6 @@ const Wrapper = styled.section`
     text-align: center;
     padding: 1rem 1rem;
     border-radius: var(--radius);
-    p {
-      color: var(--clr-primary-2);
-    }
     img {
       width: 250px;
       border-radius: 20px;
@@ -78,28 +75,27 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 768px) {
-    services-center {
-      grid-template-columns: 1fr 1fr;
-    }
-    h3,
-    h4 {
-      font-size: 32px;
+    .services-center {
+      grid-template-columns: 1fr 1fr 1fr;
     }
     .service {
-      text-align: center;
-      padding: 1rem 1rem;
-      border-radius: var(--radius);
-
       img {
-        width: 30%;
-        border-radius: 20px;
+        width: 200px;
       }
     }
   }
-
   @media (min-width: 900px) {
-    .services-center {
-    
+    .service {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  @media (min-width: 1500px) {
+    .service {
+      img {
+        width: 70%;
+      }
     }
   }
 `

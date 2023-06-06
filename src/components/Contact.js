@@ -6,11 +6,6 @@ const Contact = () => {
       <div className="section-center">
         <h3>Join our newsletter and get 20% off</h3>
         <div className="content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            sint unde quaerat ratione soluta veniam provident adipisci cumque
-            eveniet tempore?
-          </p>
           <form
             className="contact-form"
             action="https://formspree.io/f/xwkjanww"
@@ -31,15 +26,12 @@ const Contact = () => {
   )
 }
 const Wrapper = styled.section`
-  padding: 5rem 0;
+  padding: 2rem 0 4rem 0;
+  border-top: 2px solid black;
   h3 {
     text-transform: none;
   }
-  p {
-    line-height: 2;
-    max-width: 45em;
-    color: var(--clr-grey-5);
-  }
+
   .contact-form {
     width: 90vw;
     max-width: 500px;
@@ -51,29 +43,23 @@ const Wrapper = styled.section`
   .submit-btn {
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border: 2px solid var(--clr-black);
+    border: 1px solid var(--clr-black);
   }
   .form-input {
     border-right: none;
     color: var(--clr-grey-3);
-    border-top-left-radius: var(--radius);
-    border-bottom-left-radius: var(--radius);
   }
-  .submit-btn {
-    border-top-right-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
-  }
+
   .form-input::placeholder {
     color: var(--clr-black);
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: rgb(206, 189, 175);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
     transition: var(--transition);
-    color: var(--clr-black);
   }
   .submit-btn:hover {
     color: var(--clr-white);

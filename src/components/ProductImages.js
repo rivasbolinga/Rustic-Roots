@@ -7,24 +7,18 @@ const ProductImages = ({images = [{url:''}]}) => {
   return (
     <Wrapper>
       <img src={main.url} alt='main image' className='main' />
-      <div className='gallery'>
-        {images.map((image, index)=> {
-          return <img src={image.url} alt={image.filename} key={index} onClick={()=> setMain(images[index])} className={`${image.url === main.url ? 'active' : null}`}/>
-        })}
-      </div>
+
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
   .main {
-    height: 600px;
+    height: 100%;
   }
   img {
     width: 100%;
-    display: block;
-    border-radius: var(--radius);
-    object-fit: cover;
+
   }
   .gallery {
     margin-top: 1rem;
@@ -50,14 +44,9 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 992px) {
-    .main {
-      height: 500px;
-    }
-    .gallery {
-      img {
-        height: 75px;
-      }
-    }
+
+ 
+    
   }
 `
 
