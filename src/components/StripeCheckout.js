@@ -32,7 +32,13 @@ const CheckoutForm = () => {
       const { data } = await axios.post(
         '/.netlify/functions/create-payment-intent',
 
-        JSON.stringify({ cart, shipping_fee, total_amount })
+        JSON.stringify({ cart, shipping_fee, total_amount }),
+        {
+          headers: {
+            Authorization: `Bearer YOUR_SECRET_KEY`,
+            'Content-Type': 'application/json',
+          },
+        }
       )
       setClientSecret(data.clientSecret)
     } catch (error) {
