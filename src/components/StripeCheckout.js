@@ -36,7 +36,7 @@ const CheckoutForm = () => {
       )
       setClientSecret(data.clientSecret)
     } catch (error) {
-      // console.log(error.response)
+      console.log(error.response)
     }
   }
   useEffect(() => {
