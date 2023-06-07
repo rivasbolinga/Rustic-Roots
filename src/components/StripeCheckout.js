@@ -9,7 +9,6 @@ import {
 } from '@stripe/react-stripe-js'
 import axios from 'axios'
 import { useCartContext } from '../context/cart_context'
-
 import { formatPrice } from '../utils/helpers'
 import { useHistory } from 'react-router-dom'
 
@@ -34,6 +33,7 @@ const CheckoutForm = () => {
 
         JSON.stringify({ cart, shipping_fee, total_amount }),
       )
+      console.log(data.clientSecret)
       setClientSecret(data.clientSecret)
     } catch (error) {
       console.log(error.response)
